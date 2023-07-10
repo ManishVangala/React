@@ -13,7 +13,7 @@ const Create = () => {
   const [designation, setDesignation] = useState("")
   const history = useNavigate();
 
-
+    // this is to make post method api call
     const handleSubmit = (e) =>{
         e.preventDefault(); 
         axios.post(`https://superadmin.homes247.in/crmbackend/executives`, {name:name,email:email, number:number,dob:dob,designation:designation  })
