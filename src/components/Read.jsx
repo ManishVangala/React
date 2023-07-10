@@ -5,6 +5,9 @@ import Table from 'react-bootstrap/Table';
 const  Read = () => {
     const [data, setData] = useState([])
 
+    
+
+    // to make get method api call
     useEffect(() => {
         axios.get("https://superadmin.homes247.in/crmbackend/executives")
              .then((response) => {
@@ -17,12 +20,12 @@ const  Read = () => {
 
      
   return (
-    <div>
+    <>
       <Table striped bordered hover>
       <thead>
         <tr>
           <th>ID</th>
-          <th>executives_name</th>
+          <th>Executives_name</th>
           <th>executives_number</th>
           <th>executives_email</th>
           <th>exec_desig</th>
@@ -47,7 +50,7 @@ const  Read = () => {
         
       </tbody>
     </Table>
-    </div>
+    </>
   )
 }
 

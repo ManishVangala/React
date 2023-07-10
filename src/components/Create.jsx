@@ -24,7 +24,7 @@ const Create = () => {
     }
 
   return (
-    <div>
+    <>
       <Form>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>executives_name</Form.Label>
@@ -60,7 +60,7 @@ const Create = () => {
       </Link>
         
     </Form>
-    </div>
+    </>
   )
 }
 
